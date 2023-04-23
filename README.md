@@ -34,9 +34,9 @@ Dependencies used, and why they are used
 - [Typescript](https://www.typescriptlang.org/docs/)
   - Compared to Javascript, the typings can help avoid a lot of common bugs. `tsc` is integrated in Vite so no more overhead for using typescript.
   - [@webgpu/types](https://www.npmjs.com/package/@webgpu/types): types for WebGPU API.
-- [gl-matrix](https://glmatrix.net/): matrix and vector library you are very likely to use for 3D things.
+- [wgpu-matrix](https://github.com/greggman/wgpu-matrix): 3D math library for WebGPU.
 - [tweakpane](https://cocopon.github.io/tweakpane/) the new dat.GUI thing.
-  - [@tweakpane/core] for typescript support.
+  - [@tweakpane/core](https://www.npmjs.com/package/@tweakpane/core) for typescript support.
 
 You can write your shader in separate `.wgsl` file and import as plain string
 

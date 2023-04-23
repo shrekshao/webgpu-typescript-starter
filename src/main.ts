@@ -3,7 +3,7 @@ import init from './test-triangle';
 import { assert } from './utils/util';
 import { Pane } from 'tweakpane';
 
-window.onload = async () => {
+(async () => {
   if (navigator.gpu === undefined) {
     const h = document.querySelector('#title') as HTMLElement;
     h.innerText = 'WebGPU is not supported in this browser.';
@@ -48,4 +48,4 @@ window.onload = async () => {
   // Your WebGPU code can go here:
 
   init(context, device);  // Remove me!
-};
+})();
